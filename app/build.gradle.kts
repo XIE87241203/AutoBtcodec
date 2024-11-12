@@ -26,6 +26,19 @@ android {
                 "proguard-rules.pro"
             )
         }
+        android.applicationVariants.all{
+
+        }
+        android.applicationVariants.all {
+            val variant = this
+            variant.outputs
+                .map { it as com.android.build.gradle.internal.api.BaseVariantOutputImpl }
+                .forEach { output ->
+                    val outputFileName = "AutoBTCodec-${variant.baseName}-${variant.versionName}.apk"
+                    println("OutputFileName: $outputFileName")
+                    output.outputFileName = outputFileName
+                }
+        }
     }
     buildFeatures {
         viewBinding = true
