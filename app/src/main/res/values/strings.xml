@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AutoBtcodec</string>
+    <string name="bluetooth_codec_select_title">锁定编解码器:</string>
+    <string name="bluetooth_connect_codec">当前编解码器</string>
+    <string name="bt_disconnect">耳机未连接</string>
+    <string name="bt_connected">耳机已连接</string>
+    <string name="apply">应用</string>
+</resources>
